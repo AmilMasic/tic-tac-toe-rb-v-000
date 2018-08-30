@@ -117,5 +117,7 @@ combo = won?(board)
 end
 
 def play(board)
-  input = turn(board)
+  until over?(board) == true
+    input = turn(board)
+  end
 end
