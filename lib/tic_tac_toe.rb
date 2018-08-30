@@ -136,12 +136,17 @@ def draw?(board)
 end
 
 
+# def over?(board)
+#   if full?(board) == false && won?(board) == false && draw?(board) == false
+#     false
+#   else
+#     true
+#   end
+# end
+
+
 def over?(board)
-  if full?(board) == false && won?(board) == false && draw?(board) == false
-    false
-  else
-    true
-  end
+  full?(board) == true || won?(board) == true || draw(board) == true
 end
 
 def winner(board)
