@@ -128,7 +128,8 @@ end
 # end
 
 def play(board)
+  input = turn(board)
   until over?(board) == true
-    input = gets.turn(board)
+
   end
 end
