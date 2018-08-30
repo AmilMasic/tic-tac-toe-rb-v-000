@@ -132,5 +132,8 @@ def play(board)
     turn(board)
     if won?(board) == true
       print "Congratulations player #{board[token]}"
+    elsif draw?(board) == true
+      print "Cat's Game!"
+    else turn(board)
   end
 end
