@@ -23,7 +23,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index)
-  board[position] = token
+  board[index] = index
 end
 
 def position_taken?(board, index)
