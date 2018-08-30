@@ -130,6 +130,6 @@ end
 def play(board)
   input = turn(board)
   until over?(board) == true
-
+    
   end
 end
