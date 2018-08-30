@@ -57,11 +57,7 @@ end
 # end
 
 def valid_move?(board, index)
-  if board[index] == index.between?(0,8) && position_taken?(board, index) == false
-    true
-  else
-    false
-  end
+  index.between?(0,8) && !position_taken?(board, index)
 end
 
 # def turn(board)
