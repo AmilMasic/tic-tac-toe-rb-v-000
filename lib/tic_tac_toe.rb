@@ -116,6 +116,6 @@ combo = won?(board)
  end
 end
 
-def play 
-  
+def play(board)
+
 end
