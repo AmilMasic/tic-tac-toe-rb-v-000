@@ -118,18 +118,11 @@ end
 
 def play(board)
   until over?(board) == true
-    input = turn(board)
-    if won?(board) == true
-      print "Congratulations player #{board[token]}"
-    elsif draw?(board) == true
-      print "Cat's Game!"
-    # until won?(board) == true || draw?(board) == true
-    #   input = turn(board)
-    #   if won?(board) == true
-    #     return "Congratulations winner #{board[token]}!"
-    #   elsif draw?(board) == true
-    #     return "Cat's Game!"
-    #   end
-    end
+    # input = turn(board)
+    # if won?(board) == true
+    #   print "Congratulations player #{board[token]}"
+    # elsif draw?(board) == true
+    #   print "Cat's Game!"
+    # end
   end
 end
