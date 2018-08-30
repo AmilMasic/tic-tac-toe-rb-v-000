@@ -125,4 +125,3 @@ combo = won?(board)
    board[combo[0]]
  end
 end
-
