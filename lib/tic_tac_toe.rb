@@ -119,10 +119,10 @@ end
 def play(board)
   until over?(board) == true
     input = turn(board)
+    if won?(board) == true
+      return "Congratulations player #{board[token]}"
+    elsif draw?(board) == true
+      return "Cat's Game!"
   end
-  if won?(board) == true
-    return "Congratulations player #{board[token]}"
-  elsif draw?(board) == true
-    return "Cat's Game!"
   end
 end
