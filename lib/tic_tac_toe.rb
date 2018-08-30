@@ -30,32 +30,6 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-# def valid_move?(board, index)
-#   if position_taken?(board, index) == false && board[index] == [0..8]
-#     true
-#   elsif position_taken?(board, index) == true
-#     false
-# end
-# end
-
-# def valid_move?(board, index)
-#   if position_taken?(board, index) || board[index] == nil
-#       false
-#     else board[index] == index.between?(0,8)
-#       true
-# end
-# end
-
-# def valid_move?(board, index)
-#   if board[index] != index.between?(0,8)
-#      true
-#   elsif board[index] == index.between(0,8) && position_taken?(board, index) == true
-#   true
-#   else
-#     nil
-#   end
-# end
-
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
@@ -128,22 +102,8 @@ end
 def draw?(board)
   if won?(board) == false && full?(board) == true
     true
-  # else won?(board) == false && full?(board) == false
-  #   false
-  # else
-  #   false
   end
 end
-
-
-# def over?(board)
-#   if full?(board) == false && won?(board) == false && draw?(board) == false
-#     false
-#   else
-#     true
-#   end
-# end
-
 
 def over?(board)
   full?(board) == true || won?(board) == true || draw?(board) == true
