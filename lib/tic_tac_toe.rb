@@ -128,7 +128,7 @@ end
 # end
 def play(board)
   input = turn(board)
-  while over?(board) == false
+  while over?(board) == true
     turn(board)
     if won?(board) == true
       print "Congratulations player #{board[token]}"
