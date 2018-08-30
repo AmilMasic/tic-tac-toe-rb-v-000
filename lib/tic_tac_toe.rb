@@ -48,9 +48,9 @@ end
 
 def valid_move?(board, index)
   if board[index] != index.between?(0,8)
-     false
+     true
   elsif board[index] == index.between(0,8) && position_taken?(board, index) == true
-   false
+  true
   else
     nil
   end
