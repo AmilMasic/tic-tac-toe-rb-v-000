@@ -1,4 +1,4 @@
-require pry
+
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -29,7 +29,7 @@ end
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
-binding.pry
+
 def valid_move?(board, index)
   if position_taken?(board, index) || board[index] == nil
       true
