@@ -30,12 +30,12 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-def valid_move?(board, index)
-  if position_taken?(board, index) == true
-      false
-    else
-      true
-end
+# def valid_move?(board, index)
+#   if position_taken?(board, index) == true
+#       false
+#     else
+#       true
+# end
 
 def turn(board)
   puts "Please enter 1-9:"
