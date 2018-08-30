@@ -46,13 +46,21 @@ end
 # end
 # end
 
+# def valid_move?(board, index)
+#   if board[index] != index.between?(0,8)
+#      true
+#   elsif board[index] == index.between(0,8) && position_taken?(board, index) == true
+#   true
+#   else
+#     nil
+#   end
+# end
+
 def valid_move?(board, index)
-  if board[index] != index.between?(0,8)
-     true
-  elsif board[index] == index.between(0,8) && position_taken?(board, index) == true
-  true
+  if board[index] == index.between?(0,8) && position_taken?(board, index) == false
+    true
   else
-    nil
+    false
   end
 end
 
