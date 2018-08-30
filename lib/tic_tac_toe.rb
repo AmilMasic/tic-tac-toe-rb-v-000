@@ -135,5 +135,7 @@ def play(board)
     elsif draw?(board) == true
       print "Cat's Game!"
     else turn(board)
+
+    end
   end
 end
