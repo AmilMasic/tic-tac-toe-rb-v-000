@@ -47,7 +47,8 @@ end
 # end
 
 def valid_move?(board, index)
-  if board[index.between?(0,8)] && position_taken?(board, index) == true
+  new_index = board[index]
+  if new_index.between(0,8) && position_taken?(board, index) == true
     true
   # elsif
   #   position_taken?(board, index) == false && board[index] == nil
