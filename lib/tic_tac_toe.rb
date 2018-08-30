@@ -127,5 +127,5 @@ end
 #   end
 # end
 def play(board)
-
+  input = turn(board)
 end
