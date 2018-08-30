@@ -40,10 +40,21 @@ end
 
 def valid_move?(board, index)
   if position_taken?(board, index) || board[index] == nil
-      true
-    else board[index] == index.between?(0,8)
       false
+    else board[index] == index.between?(0,8)
+      true
 end
+end
+
+def valid_move?(board, index)
+  if board[index] == index.between?(0,8)
+    true
+  elsif
+    position_taken?(board, index) == false && board[index] == nil
+    true
+  else
+    false
+  end
 end
 
 # def turn(board)
