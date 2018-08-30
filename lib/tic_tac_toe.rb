@@ -46,8 +46,8 @@ end
 # end
 # end
 
-def valid_move?(board, index) 
-  if board[index] == index.between?(0,8) && position_taken?(board, index) == true
+def valid_move?(board, index)
+  if board[index.between(0,8)] && position_taken?(board, index) == true
     true
   # elsif
   #   position_taken?(board, index) == false && board[index] == nil
