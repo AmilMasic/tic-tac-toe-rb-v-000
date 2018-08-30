@@ -31,10 +31,10 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if position_taken?(board, index) == true
-      false
+  if position_taken?(board, index) == false && board[index] == [0..8]
+    true
     else
-      true
+    false
 end
 end
 
