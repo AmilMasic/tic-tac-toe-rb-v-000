@@ -128,12 +128,13 @@ end
 def draw?(board)
   if won?(board) == false && full?(board) == true
     true
-  elsif won?(board) == false && full?(board) == false
+  else won?(board) == false && full?(board) == false
     false
-  else
-    false
+  # else
+  #   false
   end
 end
+
 
 def over?(board)
   if full?(board) == false && won?(board) == false && draw?(board) == false
