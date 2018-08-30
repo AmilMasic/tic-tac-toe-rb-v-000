@@ -117,7 +117,19 @@ combo = won?(board)
 end
 
 def play(board)
-  # until over?(board) == true
-  #   # input = turn(board)
-  # end
+  until over?(board) == true
+    # input = turn(board)
+    # if won?(board) == true
+    # 
+    # elsif draw?(board) == true
+      # break
+    until won?(board) == true || draw?(board) == true
+      input = turn(board)
+      if won?(board) == true 
+        return "Congratulations winner #{board[token]}!"
+      elsif draw?(board) == true
+        return "Cat's Game!"
+      end
+    end 
+  end
 end
