@@ -74,18 +74,18 @@ def turn(board)
   end
 end
 
-# def turn_count(board)
-#   tokens = ["X", "O"]
-#   counter = 0
-#     board.each do |turn|
-#       tokens.each do |token|
-#       if turn == token
-#         counter += 1
-#       end
-#     end
-#   end
-#   counter
-# end
+def turn_count(board)
+  tokens = ["X", "O"]
+  counter = 0
+    board.each do |turn|
+      tokens.each do |token|
+      if turn == token
+        counter += 1
+      end
+    end
+  end
+  counter
+end
 
 def current_player(board)
   if turn_count(board) % 2 == 0
