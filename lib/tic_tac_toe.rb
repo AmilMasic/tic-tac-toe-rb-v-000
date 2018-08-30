@@ -126,16 +126,17 @@ end
 #   end
 #   end
 # end
-def play(board)
-  input = turn(board)
-  while over?(board) == true
-    turn(board)
-    if won?(board) == true
-      print "Congratulations player #{board[token]}"
-    elsif draw?(board) == true
-      print "Cat's Game!"
-    else turn(board)
 
-    end
-  end
-end
+# def play(board)
+#   input = turn(board)
+#   while over?(board) == true
+#     turn(board)
+#     if won?(board) == true
+#       print "Congratulations player #{board[token]}"
+#     elsif draw?(board) == true
+#       print "Cat's Game!"
+#     else turn(board)
+#
+#     end
+#   end
+# end
