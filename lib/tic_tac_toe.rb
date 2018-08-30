@@ -32,9 +32,9 @@ end
 
 def valid_move?(board, index)
   if position_taken?(board, index) == false || board[index] == nil
-      true
-    else board[index] == index.between?(0,8)
       false
+    else
+      true
 end
 
 def turn(board)
