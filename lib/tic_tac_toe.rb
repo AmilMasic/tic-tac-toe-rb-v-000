@@ -43,7 +43,7 @@ def turn(board)
     move(board, index, token)
     display_board(board)
   else
-    binding.pry
+    # binding.pry
     puts "oops! that's not a valid move."
     turn(board)
   end
