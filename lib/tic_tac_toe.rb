@@ -140,7 +140,8 @@ def play(board)
   # end
   end
   # binding.pry
-  if won?(board) == true
+  # if won?(board) == true
+  if won? == true
     print "Congratulations Player #{winner(board)}"
   else
     print "Cat's Game!"
