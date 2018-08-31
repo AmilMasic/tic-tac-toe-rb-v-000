@@ -136,4 +136,5 @@ def play(board)
     print "Congratulations Player #{board[token]}"
   else
     print "Cats Game!"
+  end
 end
