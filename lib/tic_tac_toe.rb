@@ -133,8 +133,8 @@ def play(board)
   end
 
   if won?(board) == true
-    print "Congratulations Player #{board[token]}"
+    "Congratulations Player #{board[token]}"
   else
-   "Cats Game!"
+    "Cats Game!"
   end
 end
