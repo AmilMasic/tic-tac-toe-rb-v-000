@@ -1,4 +1,4 @@
-
+require pry
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -43,6 +43,7 @@ def turn(board)
     move(board, index, token)
     display_board(board)
   else
+    binding.pry
     puts "oops! that's not a valid move."
     turn(board)
   end
