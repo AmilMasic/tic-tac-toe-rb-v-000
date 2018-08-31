@@ -128,8 +128,12 @@ end
 # end
 
 def play(board)
-  input = turn(board)
   until over?(board) == true
-    
+    input = turn(board)
   end
+
+  if won?(board) == true
+    print "Congratulations Player #{board[token]}"
+  else
+    print "Cats Game!"
 end
