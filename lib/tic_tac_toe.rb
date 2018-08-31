@@ -134,7 +134,6 @@ def play(board)
     # binding.pry
     turn(board)
   # if won?(board) == true
-  if won? == true
     print "Congratulations Player #{winner(board)}"
   else
     print "Cat's Game!"
