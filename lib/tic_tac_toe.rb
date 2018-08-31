@@ -131,9 +131,9 @@ def play(board)
   until over?(board) == true
     input = turn(board)
     if won?(board) == true
-      puts "Congratulations Player #{board[token]}"
+      print "Congratulations Player #{board[token]}"
     else
-      puts "Cats Game!"
+      print "Cats Game!"
     end
   end
 
