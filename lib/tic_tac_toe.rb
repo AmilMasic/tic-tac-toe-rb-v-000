@@ -133,7 +133,7 @@ def play(board)
   end
 
   if won?(board) == true
-    puts "Congratulations Player #{board[token]}"
+    puts "Congratulations Player X"
   else
     puts "Cats Game!"
   end
