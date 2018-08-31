@@ -130,6 +130,7 @@ end
 
 def play(board)
   until over?(board) == true
+    binding.pry
     turn(board)
   if won?(board) == true
     print "Congratulations Player #{board[token]}"
